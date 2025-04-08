@@ -1,0 +1,31 @@
+# Core App Framework
+streamlit
+
+# PDF Handling
+PyMuPDF # For fitz (direct PDF manipulation)
+pypdf   # Often used by LangChain PDF loaders
+
+# Environment Variables
+python-dotenv
+
+# LangChain Core & Ecosystem
+langchain
+langchain-core # Often included with langchain, but explicit doesn't hurt
+langchain-openai
+langchain-community
+langchain-experimental
+langchain-chroma
+langgraph
+
+# Dependencies for LangChain Integrations
+openai          # Required by langchain-openai
+tiktoken        # Required by langchain-openai (token counting)
+chromadb        # Required by langchain-chroma
+tavily-python   # Required by langchain_community.tools.tavily_search
+
+# Data Validation & Typing (Core LangChain/LangGraph deps & direct imports)
+pydantic
+typing-extensions
+
+# Optional but Recommended for Document/Image Handling
+Pillow
